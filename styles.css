@@ -9,4 +9,20 @@ body {
     /* background-color: rgba(0,0,0,.75); */
     background-image: url(blake-verdoorn-cssvEZacHvQ-unsplash.jpg);
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#odin {
+
+}
+
+/* #odin > img {
+
+} */
+
+#blake-verdoorn {
+    color: white;
 }
