@@ -1,0 +1,12 @@
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar {
+    /* background-color: rgba(0,0,0,.75); */
+    background-image: url(blake-verdoorn-cssvEZacHvQ-unsplash.jpg);
+    background-size: cover;
+}
