@@ -83,9 +83,17 @@ body {
     padding: 1em 3em 0 0;
 }
 
-#formBody > div > input {
+div > input {
     margin-bottom: 1em;
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
 }
+
+#formBody > div > input:focus {
+    background-color: black;
+    color: white;
+}
+
 #formBody > div > label {
     font-size: x-small;
     font-weight: bold;
@@ -123,11 +131,6 @@ body {
 #logIn > span > a {
     text-decoration: none;
     font-weight: bold;
-}
-
-div > input {
-    border: 1px solid #E5E7EB;
-    border-radius: 3px;
 }
 
 .error {
