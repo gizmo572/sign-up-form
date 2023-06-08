@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,27 +23,31 @@
         </section>
         <section id="form">
             <span>Let's do this!</span>
-            <form action="submit">
-                <div>
-                    <label for="firstName">FIRST NAME</label>
-                    <input type="text" id="firstName" required>
-                    <label for="email">EMAIL</label>
-                    <input type="email" id="email" required>
-                    <label for="password">PASSWORD</label>
-                    <input type="password" id="password" class="error" required>
-                </div>
-                <div>
-                    <label for="lastName">LAST NAME</label>
-                    <input type="text" id="lastName" required>
-                    <label for="phone">PHONE NUMBER</label>
-                    <input type="tel" id="phone" required>
-                    <label for="password">CONFIRM PASSWORD</label>
-                    <input type="password" id="password" class="error" required>
-                </div>
+            <form id="theForm">
+                <section id="formBody">
+                    <div>
+                        <label for="firstName">FIRST NAME</label>
+                        <input type="text" id="firstName" required>
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" required>
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" class="error" required>
+                    </div>
+                    <div>
+                        <label for="lastName">LAST NAME</label>
+                        <input type="text" id="lastName" required>
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" id="phone" required>
+                        <label for="password">CONFIRM PASSWORD</label>
+                        <input type="password" id="password" class="error" required>
+                    </div>
+                </section>
+                <section id="submit">
+                    <input type="submit" value="Create Account"/>
+                </section>
             </form>
         </section>
-        <section id="submit">
-            <input type="submit" value="Create Account"/>
+        <section id="logIn">
             <span>Already have an account? <a href="#">Log in</a></span>
         </section>
     </section>
