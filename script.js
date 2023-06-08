@@ -1,6 +1,7 @@
 const pwOne = document.getElementById('password1');
 const pwTwo = document.getElementById('password2');
 const pwMatch = document.querySelector('.password + span');
+const form = document.getElementById('theForm');
 
 document.querySelectorAll('.password').forEach(tag => {
     tag.addEventListener('keypress', () => {
@@ -19,7 +20,7 @@ document.querySelectorAll('.password').forEach(tag => {
     })
 })
 
-function validateForm(e) {
-    
-
-}
+form.addEventListener("submit", (e) => {
+    console.log('aaaa')
+    if (pwOne.value !== pwTwo.value) e.preventDefault();
+})

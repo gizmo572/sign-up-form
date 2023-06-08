@@ -116,7 +116,7 @@ div > input {
     padding: 2em;
 }
 
-#submit > input {
+#submit > button {
     width: 12em;
     background: rgb(28, 72, 160);
     color: white;
@@ -125,7 +125,7 @@ div > input {
     margin-bottom: 2em;
 }
 
-#submit > input:hover {
+#submit > button:hover {
     background: rgba(28, 72, 160,.9);
     cursor: pointer;
 }
