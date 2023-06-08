@@ -85,3 +85,30 @@ form > div > label {
     font-weight: bold;
 }
 
+#submit {
+    background-color: rgba(236, 236, 236, 0.5);
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 2em;
+}
+
+#submit > button {
+    width: 12em;
+    background: rgb(28, 72, 160);
+    color: white;
+    padding: .75em;
+    border-radius: 5px;
+    margin-bottom: 2em;
+}
+
+#submit > button:hover {
+    background: rgba(28, 72, 160,.9);
+    cursor: pointer;
+}
+
+#submit > span > a {
+    text-decoration: none;
+    font-weight: bold;
+}
