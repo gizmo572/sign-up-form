@@ -2,6 +2,7 @@ const pwOne = document.getElementById('password1');
 const pwTwo = document.getElementById('password2');
 const pwMatch = document.querySelector('.password + span');
 const form = document.getElementById('theForm');
+const badPW = document.querySelector('form > div');
 
 document.querySelectorAll('.password').forEach(tag => {
     tag.addEventListener('keypress', () => {
@@ -21,6 +22,14 @@ document.querySelectorAll('.password').forEach(tag => {
 })
 
 form.addEventListener("submit", (e) => {
-    console.log('aaaa')
-    if (pwOne.value !== pwTwo.value) e.preventDefault();
+    console.log(badPW)
+    if (pwOne.value !== pwTwo.value) {
+        e.preventDefault();
+        badPW.textContent = "PASSWORDS DO NOT MATCH!!!!";
+        badPW.classList.add('badPw');
+        setTimeout(() =>{
+            badPW.textContent = '';
+            badPW.classList.remove('badPw');
+        },2000)
+    }
 })
