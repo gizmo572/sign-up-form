@@ -1,3 +1,7 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: Norse;
     src: url('fonts/Norse-Bold.otf');
@@ -11,13 +15,12 @@ body {
 }
 
 #sidebar {
-    /* background-color: rgba(0,0,0,.75); */
     background-image: url(blake-verdoorn-cssvEZacHvQ-unsplash.jpg);
-    background-size: cover;
+    background-size:cover;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 30vw;
+    flex: 1 0 30%;
 }
 
 #odin {
@@ -41,7 +44,6 @@ body {
 }
 
 #main {
-    flex-basis: 70%;
     display: flex;
     flex-direction: column;
 }
@@ -54,6 +56,7 @@ body {
 #description > * {
     padding: 2em 4em 1em 2em;
     font-size: large;
+    word-wrap: break-word;
 }
 
 #form > span {
@@ -110,7 +113,6 @@ div > input {
 
 #submit {
     background-color:rgba(236, 236, 236, 0.5);
-    width: 100vw;
     padding: 2em;
 }
 

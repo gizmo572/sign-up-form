@@ -18,3 +18,8 @@ document.querySelectorAll('.password').forEach(tag => {
         },100)
     })
 })
+
+function validateForm(e) {
+    
+
+}
