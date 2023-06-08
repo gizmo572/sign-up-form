@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Norse;
+    src: url('fonts/Norse-Bold.otf');
+}
+
 body {
     display: flex;
     height: 100vh;
@@ -12,17 +17,29 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    width: 30vw;
 }
 
 #odin {
-
+    background-color: rgba(0,0,0,.5);
+    margin-top: 12em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* #odin > img {
 
-} */
+#odin > span {
+    color: white;
+    font-size: 80px;
+    font-family: 'Norse';
+}
 
 #blake-verdoorn {
     color: white;
+    margin: 1em;
+}
+
+#main {
+    flex-basis: 70%;
 }
