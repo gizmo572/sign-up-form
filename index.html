@@ -8,7 +8,6 @@
     <title>Sign-Up Form</title>
 </head>
 <body>
-    <!-- <img src="blake-verdoorn-cssvEZacHvQ-unsplash.jpg" alt="Small bridge in forest crossing over extremely tall, narrow waterfall" height="200"> -->
     <section id="sidebar">
         <section id="odin">
             <img src="odin-logo.png" alt="Odin Project Logo" height="100">
@@ -17,19 +16,29 @@
         <span id="blake-verdoorn">Photo by Blake Verdoorn on Unsplash</span>
     </section>
     <section id="main">
-        <section>
+        <section id="description">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, illum amet molestias asperiores quam repudiandae officiis similique quaerat, unde aspernatur veniam, sapiente minima tenetur nobis!</p>
             <span>You <em>know</em> you want to.</span>
         </section>
-        <section>
+        <section id="form">
             <span>Let's do this!</span>
             <form action="submit">
-                <label for="firstName">FIRST NAME</label><input type="text" id="firstName">
-                <label for="lastName">LAST NAME</label><input type="text" id="lastName">
-                <label for="email">EMAIL</label><input type="email" id="email">
-                <label for="phone">PHONE NUMBER</label><input type="tel" id="phone">
-                <label for="password">PASSWORD</label><input type="password" id="password">
-                <label for="password">CONFIRM PASSWORD</label><input type="password" id="password">
+                <div>
+                    <label for="firstName">FIRST NAME</label>
+                    <input type="text" id="firstName">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password">
+                </div>
+                <div>
+                    <label for="lastName">LAST NAME</label>
+                    <input type="text" id="lastName">
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="tel" id="phone">
+                    <label for="password">CONFIRM PASSWORD</label>
+                    <input type="password" id="password">
+                </div>
             </form>
         </section>
         <section>
