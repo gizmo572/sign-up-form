@@ -135,4 +135,15 @@ div > input {
 
 .error {
     border: 1px solid red;
+
+}
+
+.password {
+    margin-bottom: 0;
+}
+
+.password + span {
+    font-size: x-small;
+    color: red;
+    font-weight: bold;
 }
